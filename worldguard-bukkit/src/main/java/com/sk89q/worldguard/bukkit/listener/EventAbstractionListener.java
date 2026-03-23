@@ -218,7 +218,7 @@ public class EventAbstractionListener extends AbstractListener {
 
     @EventHandler(ignoreCancelled = true)
     public void onBlockMultiPlace(BlockMultiPlaceEvent event) {
-        // Allow portal generation if the player can interact with block
+        // Allow end_portal generation if player can interact with block
         // avoiding upstream issues
         if (isExemptBlock(event.getBlockPlaced().getType())) {
             return;
